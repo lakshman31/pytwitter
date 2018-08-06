@@ -1,3 +1,4 @@
+#these lib are required to execute this pls install textblob,tweepy,sqlite,matplotlib,wordcloud
 from textblob import TextBlob
 import tweepy
 import sqlite3
@@ -17,8 +18,8 @@ token_secret= "rAST7FhNjmD3tIW9hAM6YCnHz063AaKmrpye38W8j0Wdu"
 #authenticating
 auth=tweepy.OAuthHandler(consumer_key,consumer_secret)
 auth.set_access_token(token_key,token_secret)
-#making all the above work
 api=tweepy.API(auth)
+#recieving the inputs from the user
 dat=input('enter the key to be searched')
 comment_words=' '
 stopwords=set(STOPWORDS)
